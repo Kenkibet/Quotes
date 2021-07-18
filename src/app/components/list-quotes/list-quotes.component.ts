@@ -17,6 +17,11 @@ export class ListQuotesComponent implements OnInit {
 
   ngOnInit(): void {
     this.quotes = this.qouteService.getAllQuotes();
+    console.log(this.quotes);
+  }
+
+  addQuote(){
+    this.qouteService.getAllQuotes();
   }
 
 }

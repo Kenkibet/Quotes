@@ -1,18 +1,31 @@
-<div class="container">
-    <div class="row justify-contnet-center">
+<div class="container mt-4">
+    <div class="row justify-content-center">
         <div class="col-md-9">
             <div *ngFor="let quote of quotes; let i = index">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                    <div class="card-footer">
-            
+                        <div class="mb-3">
+                            <div class="row align-items-center">
+                                <div class="col ms-n2">
+                                    <h4 class="mb-1">
+                                        {{ quote.submitter }} added
+                                    </h4>
+
+                                    <p class="card-text small text-muted">
+                                        <span class="fa fa-clock-o"></span> <time datetime="2018-05-24"> 4hr ago</time>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mb-3">
+                            {{ quote.quote }}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 </div>
