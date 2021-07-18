@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbaComponent } from './components/navba/navba.component';
 import { AddQuotesComponent } from './components/add-quotes/add-quotes.component';
 import { ListQuotesComponent } from './components/list-quotes/list-quotes.component';
+import { TimePipe } from './pipes/time-pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbaComponent,
     AddQuotesComponent,
-    ListQuotesComponent
+    ListQuotesComponent,
+    TimePipe
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,21 @@ export class QuotesService {
   addQuote(quote){
     QUOTES.push(quote);
   }
+
+  getHighestUpvote(arr) {
+    arr.forEach((item)=>{
+      item.maxUpvote = false;
+    })
+    let newArr = arr.map((item) => {
+      return item.upvote;
+    });
+    let highestVoteIndex = newArr.indexOf(Math.max(...newArr));
+    return arr.forEach((item, index) => {
+      if (index === highestVoteIndex) {
+        item.maxUpvote = true;
+      }
+    })
+  }
 }
 
 const QUOTES = [

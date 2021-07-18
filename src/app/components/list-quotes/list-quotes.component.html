@@ -12,16 +12,30 @@
                                     </h4>
 
                                     <p class="card-text small text-muted">
-                                        <span class="fa fa-clock-o"></span> <time datetime="2018-05-24"> 4hr ago</time>
+                                        <span class="fa fa-clock-o"></span> <time> {{ quote.time | createdAt }}
+                                            ago</time>
                                     </p>
 
                                 </div>
                             </div>
                         </div>
 
-                        <p class="mb-3">
+                        <p class="mb-3 text-muted">
                             {{ quote.quote }}
                         </p>
+                        <span class="float-right small text-right"><em> By {{quote.author}}</em> </span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row justify-items-between">
+                            <div class="col-md-6">
+                                <span class="badge bg-dark">upvotes: 0</span>
+                                <span class="mx-3 badge bg-danger">downvotes: 0</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span>upvotes: 0</span>
+                                <span class="ml-4">downvotes: 0</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
