@@ -13,17 +13,7 @@ export class ListQuotesComponent implements OnInit {
 
   quotes:Quote[]
 
-  @Input() quote;
   @Output() thisEvent = new EventEmitter<string>();
-
-  upvote(){
-    this.quote.upvote += 1;
-    this.thisEvent.emit("upvote");
-  }
-  downvote(){
-    this.quote.downvote += 1;
-    this.thisEvent.emit("downvote");
-  }
 
   constructor(private qouteService: QuotesService) { }
 
