@@ -10,6 +10,10 @@ export class QuotesService {
   getAllQuotes() {
     return QUOTES
   }
+
+  addQuote(quote){
+    QUOTES.push(quote);
+  }
 }
 
 const QUOTES = [
