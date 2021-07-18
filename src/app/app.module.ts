@@ -8,6 +8,7 @@ import { NavbaComponent } from './components/navba/navba.component';
 import { AddQuotesComponent } from './components/add-quotes/add-quotes.component';
 import { ListQuotesComponent } from './components/list-quotes/list-quotes.component';
 import { TimePipe } from './pipes/time-pipe';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TimePipe } from './pipes/time-pipe';
     NavbaComponent,
     AddQuotesComponent,
     ListQuotesComponent,
-    TimePipe
+    TimePipe,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
