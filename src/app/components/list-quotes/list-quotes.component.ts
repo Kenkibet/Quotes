@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Quote } from 'src/app/interfaces/quote';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Quote } from 'src/app/models/quotes-class';
 import { QuotesService } from 'src/app/services/quotes.service';
 
 @Component({
@@ -23,6 +23,10 @@ export class ListQuotesComponent implements OnInit {
 
   addQuote(){
     this.qouteService.getAllQuotes();
+  } 
+
+  findMaxUpvote(quotes){
+    this.qouteService.getHighestUpvote(quotes);
   }
 
 }

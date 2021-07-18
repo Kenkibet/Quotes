@@ -2,12 +2,12 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div *ngFor="let quote of quotes; let i = index">
-                <div class="card">
+                <div class="card shadow" [quote]="quote" (click)="findMaxUpvote(quotes) " appVote >
                     <div class="card-body">
                        <app-details [quote]="quote"></app-details>                       
                     </div>
                     <div class="card-footer">
-                        <app-votes [quote]="quote"></app-votes>
+                        <app-votes [quote]="quote" [quotes]="quotes"></app-votes>
                     </div>
                 </div>
             </div>

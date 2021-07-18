@@ -15,15 +15,15 @@ export class QuotesService {
     QUOTES.push(quote);
   }
 
-  getHighestUpvote(arr) {
-    arr.forEach((item)=>{
+  getHighestUpvote(quotes) {
+    quotes.forEach((item)=>{
       item.maxUpvote = false;
     })
-    let newArr = arr.map((item) => {
+    let newquotes = quotes.map((item) => {
       return item.upvote;
     });
-    let highestVoteIndex = newArr.indexOf(Math.max(...newArr));
-    return arr.forEach((item, index) => {
+    let highestVoteIndex = newquotes.indexOf(Math.max(...newquotes));
+    return quotes.forEach((item, index) => {
       if (index === highestVoteIndex) {
         item.maxUpvote = true;
       }

@@ -10,6 +10,7 @@ import { ListQuotesComponent } from './components/list-quotes/list-quotes.compon
 import { TimePipe } from './pipes/time-pipe';
 import { DetailsComponent } from './components/details/details.component';
 import { VotesComponent } from './components/votes/votes.component';
+import { VoteDirective } from './directives/vote.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VotesComponent } from './components/votes/votes.component';
     ListQuotesComponent,
     TimePipe,
     DetailsComponent,
-    VotesComponent
+    VotesComponent,
+    VoteDirective
   ],
   imports: [
     BrowserModule,
