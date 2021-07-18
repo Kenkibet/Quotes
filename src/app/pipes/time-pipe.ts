@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'timePassed',
+  name: 'createdAt',
   pure: false
 })
 export class TimePipe implements PipeTransform {
