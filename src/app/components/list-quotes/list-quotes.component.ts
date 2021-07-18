@@ -18,7 +18,7 @@ export class ListQuotesComponent implements OnInit {
   constructor(private qouteService: QuotesService) { }
 
   ngOnInit(): void {
-    this.quotes = this.qouteService.getAllQuotes();
+    this.quotes = this.qouteService.getAllQuotes().reverse();
   }
 
   addQuote(){
