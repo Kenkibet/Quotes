@@ -10,7 +10,7 @@ import { Quote } from 'src/app/interfaces/quote';
 export class AddQuotesComponent implements OnInit {
   public placeholder = "Your Name..."
 
-  public newQuote: Quote
+  public newQuote =new Quote();
   @Output() addNewQuote = new EventEmitter<Quote>();
 
   submitQuote(){
