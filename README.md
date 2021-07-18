@@ -1,14 +1,12 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
-#### It is a quotes application that is supposed to allow a user to input quotes or delete them and have the quotes also voted on or against by upvote or downvote.  April 2019.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+#### It is a quotes application that is supposed to allow a user to input quotes or delete them and have the quotes also voted on or against by upvote or downvote. 
 
 #### By KEN KIBET
 
 ## Description
 The quotes application enables a user to input quotes,upvote anddownvote.It includes a form where the user enters  their name, the quote and name of author and which is  displayed on the list component.They click the upvote button to upvote,downvote button to downvote
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 
 ## Development server
 
