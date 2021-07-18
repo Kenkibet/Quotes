@@ -1,8 +1,8 @@
 # Quotes
 
-![Alt text](screens/Screenshot 2021-07-18 125749.png?raw=true "Landing")
+![Alt text](https://github.com/Kenkibet/Quotes/raw/main/screens/Screenshot%202021-07-18%20125749.png "Landing")
 
-![Alt text](screens/Screenshot 2021-07-18 125830.png?raw=true "Landing")
+![ScreenShot](https://github.com/Kenkibet/Quotes/raw/main/screens/Screenshot%202021-07-18%20125749.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 #### It is a quotes application that is supposed to allow a user to input quotes or delete them and have the quotes also voted on or against by upvote or downvote. 
