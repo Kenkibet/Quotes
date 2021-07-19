@@ -8,14 +8,17 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
-  },
+  }, 
 
   {
     path:'home', component: ListQuotesComponent
   },
   {
     path:'add', component: AddQuotesComponent
-  }
+  },
+  {
+    path:'**', component: ListQuotesComponent
+  },
 ]
 
 @NgModule({

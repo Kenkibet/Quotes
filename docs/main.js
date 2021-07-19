@@ -693,7 +693,10 @@ const routes = [
     },
     {
         path: 'add', component: _components_add_quotes_add_quotes_component__WEBPACK_IMPORTED_MODULE_1__["AddQuotesComponent"]
-    }
+    },
+    {
+        path: '**', component: _components_list_quotes_list_quotes_component__WEBPACK_IMPORTED_MODULE_2__["ListQuotesComponent"]
+    },
 ];
 class AppRoutingModule {
 }
