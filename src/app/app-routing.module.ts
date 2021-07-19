@@ -17,7 +17,7 @@ const routes: Routes = [
     path:'add', component: AddQuotesComponent
   },
   {
-    path:'**', component: ListQuotesComponent
+    path:'**', redirectTo: 'home',
   },
 ]
 
